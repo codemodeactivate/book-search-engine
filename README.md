@@ -14,7 +14,7 @@
 
   ## Deployed App
 
-  [![Site Link](./client/src/assets/screenshot.gif)](#)
+  [![Site Link](./client/src/assets/screenshot.gif)](https://jz-book-search-engine-13d5bfbac758.herokuapp.com/)
 
   ## Installation
   Clone the repo
