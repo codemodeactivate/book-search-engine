@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const db = require('./config/connection');
 
+
 const { ApolloServer } = require('apollo-server-express');
 
 const { typeDefs, resolvers } = require('./schemas');
@@ -14,7 +15,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: ({ req }) => {
-    const authUser = aughMiddleware({ req });
+    const authUser = authMiddleware({ req });
 
     return { user: authUser.user };
   },
